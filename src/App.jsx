@@ -3,9 +3,11 @@ import React, { useState, useEffect } from 'react';
 // --- CONFIGURATION ---
 const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
 
+// FORCE the Redirect URI to match your Vercel domain exactly.
+// This prevents browser inconsistencies (like www vs non-www, or http vs https).
 const REDIRECT_URI = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
   ? "http://127.0.0.1:5173/"
-  : window.location.origin + window.location.pathname;
+  : "https://audioabuse.vercel.app/";
 
 const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
 const TOKEN_ENDPOINT = "https://accounts.spotify.com/api/token";
