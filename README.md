@@ -2,6 +2,8 @@
 
 A savage, AI-powered web application that judges your music taste based on your Spotify listening history. It uses multiple LLMs (Gemini, OpenAI, Groq) to generate brutal roasts in English or Hinglish.
 
+Site Link(mostly gonna be messed up because of Gemini API key running out of requests - https://audioabuse.vercel.app/)
+
 ## Features
 
 - 🎵**Spotify Integration**: Securely logs in via Spotify (OAuth2 PKCE) to fetch your top artists.
