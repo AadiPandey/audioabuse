@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from "@vercel/analytics/next"
 
 // --- CONFIGURATION ---
 const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
