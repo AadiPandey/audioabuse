@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 // --- CONFIGURATION ---
 const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
@@ -415,6 +415,7 @@ export default function App() {
         <p>Random bullshit done by Aadi using Spotify API + Gemini</p>
       </footer>
 
+      <Analytics />
     </div>
   );
 }
